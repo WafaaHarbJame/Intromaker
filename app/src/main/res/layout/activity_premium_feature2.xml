@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_pre"
+    tools:context=".Ui.PremiumFeatureActivity2">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom_overlay"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:src="@drawable/ic_premium" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_marginEnd="4dip"
+                    android:text="@string/tf_title_premium_get"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="@string/tf_title_premium"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25.0dip"
+                android:textSize="15sp"
+                android:text="@string/tf_title_do_more_with_premium"
+                android:textColor="@color/colorSantasGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20.0dip"
+                android:layout_marginEnd="20.0dip"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <LinearLayout
+                    android:layout_gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16.0dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_check" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/tf_title_no_watermark"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16.0dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_check" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/tf_title_full_hd_video_assets"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/ic_check" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/tf_title_no_ads_experience"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:textSize="20sp"
+                android:text="@string/tf_title_choose_a_plan"
+                android:textColor="@color/colorTextButton" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/oneMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@drawable/rounded_premium_select"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_desc_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_marginStart="20.0dip"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ll_price_1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginBottom="5.0dip"
+                            android:textSize="16.0sp"
+                            android:textStyle="bold"
+                            android:text="@string/tf_title_sub_1_month" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13.0sp"
+                            android:text="@string/tf_title_3_days_free_trial" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ll_price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12.0dip"
+                        android:padding="10.0dip"
+                        android:background="@drawable/rounded_premium_price"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ll_desc_1"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6.0dp"
+                            android:layout_marginEnd="6.0dip"
+                            android:textColor="@color/colorTextButton"
+                            android:textStyle="bold"
+                            android:textSize="18.0sp"
+                            android:text="@string/tf_title_price_1_month" />
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/threeMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginBottom="8.0dip"
+                    android:background="@drawable/rounded_premium_select"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_desc_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_marginStart="20.0dip"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ll_price_2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="start|center_vertical"
+                            android:layout_marginBottom="5.0dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_marginEnd="6.0dip"
+                                android:textSize="16.0sp"
+                                android:textStyle="bold"
+                                android:text="@string/tf_title_sub_3_months" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/tag" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13.0sp"
+                            android:text="@string/tf_title_3_days_free_trial" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ll_price_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12.0dip"
+                        android:padding="10.0dip"
+                        android:background="@drawable/rounded_premium_price"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ll_desc_2"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6.0dp"
+                            android:layout_marginEnd="6.0dip"
+                            android:textColor="@color/colorTextButton"
+                            android:textStyle="bold"
+                            android:textSize="18.0sp"
+                            android:text="@string/tf_title_price_3_months" />
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/rounded_premium_select"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_desc_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_marginStart="20.0dip"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ll_price_3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="start|center_vertical"
+                            android:layout_marginBottom="5.0dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16.0sp"
+                                android:textStyle="bold"
+                                android:text="@string/tf_title_sub_12_months" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5.0dip"
+                                android:layout_marginEnd="5.0dip"
+                                android:src="@drawable/dot" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:text="@string/tf_title_sub_save_25"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13.0sp"
+                            android:text="@string/tf_title_3_days_free_trial" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ll_price_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12.0dip"
+                        android:padding="10.0dip"
+                        android:background="@drawable/rounded_premium_price"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ll_desc_3"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6.0dp"
+                            android:layout_marginEnd="6.0dip"
+                            android:textColor="@color/colorTextButton"
+                            android:textStyle="bold"
+                            android:textSize="18.0sp"
+                            android:text="@string/tf_title_price_1_year" />
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dip"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:text="@string/tf_title_automatically_charge_sub"
+                android:textColor="@color/colorTextButton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44.0dip"
+                android:layout_marginStart="13.0dip"
+                android:layout_marginEnd="13.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:alpha="0.5"
+                android:text="@string/tf_title_cancel_subscription"
+                android:textColor="@color/colorTextButton"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_back"
+        android:padding="16dp"
+        android:layout_margin="5dp"
+        android:id="@+id/btnBack"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

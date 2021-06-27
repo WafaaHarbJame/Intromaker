@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kinetic.sh">
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.kinetic.sh.Models.MainApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:roundIcon">
+        <activity
+            android:name="com.kinetic.sh.Ui.PremiumFeatureActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kinetic.sh.Ui.TemplatePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name="net.alhazmy13.mediapicker.Image.ImageActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="net.alhazmy13.mediapicker.Video.VideoActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.kinetic.sh.Ui.SettingsActivity"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+
+
+        <activity android:name="com.kinetic.sh.Ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity android:name="com.kinetic.sh.Ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.kinetic.sh.Ui.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kinetic.sh.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.kinetic.sh.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

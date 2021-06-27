@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "492270948522",
+    "project_id": "kinetic-titles",
+    "storage_bucket": "kinetic-titles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492270948522:android:35076cde5d362f2dbf80d3",
+        "android_client_info": {
+          "package_name": "com.kinetic.sh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492270948522-ai5erl55jpoiirv5066ornj88oqc33tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCExW8bF6Vf3hZZgw0psNH_oK46WUlFbTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492270948522-ai5erl55jpoiirv5066ornj88oqc33tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

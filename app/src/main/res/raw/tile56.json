@@ -1,0 +1,5208 @@
+{
+  "v": "5.7.4",
+  "fr": 24,
+  "ip": 0,
+  "op": 240,
+  "w": 1920,
+  "h": 1080,
+  "nm": "Comp 1",
+  "ddd": 1,
+  "assets": [
+    {
+      "id": "comp_0",
+      "layers": [
+        {
+          "ddd": 1,
+          "ind": 1,
+          "ty": 0,
+          "nm": "3D CONTROLLER",
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, effect('ROTATION X')('ADBE Angle Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, effect('ROTATION Y')('ADBE Angle Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, effect('ROTATION Z')('ADBE Angle Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "s": true,
+              "x": {
+                "a": 0,
+                "k": 494.389,
+                "ix": 3,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, effect('POSITION X')('ADBE Slider Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "y": {
+                "a": 0,
+                "k": 387.766,
+                "ix": 4,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, effect('POSITION Y')('ADBE Slider Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "z": {
+                "a": 0,
+                "k": 373.362,
+                "ix": 5,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = effect('POSITION Z')('ADBE Slider Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              }
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                56,
+                56,
+                56
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "POSITION X",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "POSITION Y",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 2,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1,
+                    "x": "var $bm_rt;\nvar minpos;\ntry {\n    minpos = effect('POSITION Y')(1);\n    $bm_rt = clamp(minpos, -470, 100);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "POSITION Z",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 3,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "ROTATION X",
+              "np": 3,
+              "mn": "ADBE Angle Control",
+              "ix": 4,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Angle",
+                  "mn": "ADBE Angle Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1,
+                    "x": "var $bm_rt;\nvar x;\ntry {\n    x = effect('ROTATION X')(1);\n    $bm_rt = clamp(x, -90, 90);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "ROTATION Y",
+              "np": 3,
+              "mn": "ADBE Angle Control",
+              "ix": 5,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Angle",
+                  "mn": "ADBE Angle Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "ROTATION Z",
+              "np": 3,
+              "mn": "ADBE Angle Control",
+              "ix": 6,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Angle",
+                  "mn": "ADBE Angle Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 2,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                2
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 3,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                4
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 4,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                6
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 5,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                8
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 6,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                10
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 7,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                12
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 8,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                14
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 9,
+          "ty": 0,
+          "nm": "Title_Source_27",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1916.203,
+                1151.412,
+                16
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1916.16,
+                1151.303,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Brightness & Contrast",
+              "np": 4,
+              "mn": "ADBE Brightness & Contrast",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Brightness",
+                  "mn": "ADBE Brightness & Contrast-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": -5,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Contrast",
+                  "mn": "ADBE Brightness & Contrast-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 10,
+          "ty": 1,
+          "nm": "SHADOW CONTROLLER",
+          "hd": true,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                500,
+                500,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                500,
+                500,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Wall Shadow ON/OFF",
+              "np": 3,
+              "mn": "ADBE Checkbox Control",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 7,
+                  "nm": "Checkbox",
+                  "mn": "ADBE Checkbox Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Fllor Shadow ON/OFF",
+              "np": 3,
+              "mn": "ADBE Checkbox Control",
+              "ix": 2,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 7,
+                  "nm": "Checkbox",
+                  "mn": "ADBE Checkbox Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Shadow Opacity",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 3,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 74,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Shadow Blur",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 4,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 41,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Wall Shadow Distance",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 5,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 11,
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Wall Shadow Position",
+              "np": 3,
+              "mn": "ADBE Point Control",
+              "ix": 6,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 3,
+                  "nm": "Point",
+                  "mn": "ADBE Point Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1950,
+                      1084
+                    ],
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Floor Shadow Position",
+              "np": 3,
+              "mn": "ADBE Point Control",
+              "ix": 7,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 3,
+                  "nm": "Point",
+                  "mn": "ADBE Point Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      17,
+                      111
+                    ],
+                    "ix": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "sw": 1000,
+          "sh": 1000,
+          "sc": "#ffffff",
+          "ip": 0,
+          "op": 751.2,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 11,
+          "ty": 0,
+          "nm": "ELEMENT CONTROLLER",
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                500,
+                500,
+                0
+              ],
+              "ix": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1920,
+                1080,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                78,
+                78,
+                78
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 12,
+          "ty": 0,
+          "nm": "WALL_SHADOW",
+          "parent": 1,
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 0,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "s": true,
+              "x": {
+                "a": 0,
+                "k": 2541.092,
+                "ix": 3,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('SHADOW CONTROLLER').effect('Wall Shadow Position')('ADBE Point Control-0001')[0];\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "y": {
+                "a": 0,
+                "k": 1450.816,
+                "ix": 4,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('SHADOW CONTROLLER').effect('Wall Shadow Position')('ADBE Point Control-0001')[1];\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "z": {
+                "a": 0,
+                "k": 154.227,
+                "ix": 5,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, thisComp.layer('SHADOW CONTROLLER').effect('Wall Shadow Distance')('ADBE Slider Control-0001'));\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              }
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1920,
+                1080,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                106.563,
+                106.563,
+                106.563
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 21,
+              "nm": "Fill",
+              "np": 9,
+              "mn": "ADBE Fill",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 10,
+                  "nm": "Fill Mask",
+                  "mn": "ADBE Fill-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "All Masks",
+                  "mn": "ADBE Fill-0007",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Fill-0002",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ],
+                    "ix": 3
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Invert",
+                  "mn": "ADBE Fill-0006",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Horizontal Feather",
+                  "mn": "ADBE Fill-0003",
+                  "ix": 5,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Vertical Feather",
+                  "mn": "ADBE Fill-0004",
+                  "ix": 6,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Opacity",
+                  "mn": "ADBE Fill-0005",
+                  "ix": 7,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 7
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Fast Box Blur",
+              "np": 6,
+              "mn": "ADBE Box Blur2",
+              "ix": 2,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Blur Radius",
+                  "mn": "ADBE Box Blur2-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('SHADOW CONTROLLER').effect('Shadow Blur')('ADBE Slider Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Iterations",
+                  "mn": "ADBE Box Blur2-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 3,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Blur Dimensions",
+                  "mn": "ADBE Box Blur2-0003",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 3
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Repeat Edge Pixels",
+                  "mn": "ADBE Box Blur2-0004",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 1,
+          "ind": 13,
+          "ty": 0,
+          "nm": "FLOOR_SHADOW",
+          "hd": true,
+          "refId": "comp_1",
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "rx": {
+              "a": 0,
+              "k": 90,
+              "ix": 8
+            },
+            "ry": {
+              "a": 0,
+              "k": 0,
+              "ix": 9,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = transform.yRotation;\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+            },
+            "rz": {
+              "a": 0,
+              "k": 0,
+              "ix": 10,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_mul(thisComp.layer('3D CONTROLLER').transform.yRotation, -1);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+            },
+            "or": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 7
+            },
+            "p": {
+              "s": true,
+              "x": {
+                "a": 0,
+                "k": -473,
+                "ix": 3,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(thisComp.layer('SHADOW CONTROLLER').effect('Floor Shadow Position')('ADBE Point Control-0001')[0], thisComp.layer('3D CONTROLLER').transform.xPosition);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "y": {
+                "a": 0,
+                "k": 234,
+                "ix": 4,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(thisComp.layer('SHADOW CONTROLLER').effect('Floor Shadow Position')('ADBE Point Control-0001')[1], thisComp.layer('3D CONTROLLER').transform.yPosition);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              },
+              "z": {
+                "a": 0,
+                "k": 0,
+                "ix": 5,
+                "x": "var $bm_rt;\ntry {\n    $bm_rt = $bm_sum(value, thisComp.layer('3D CONTROLLER').transform.zPosition);\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+              }
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                1920,
+                1080,
+                0
+              ],
+              "ix": 1
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                45,
+                125,
+                33
+              ],
+              "ix": 6
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 21,
+              "nm": "Fill",
+              "np": 9,
+              "mn": "ADBE Fill",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 10,
+                  "nm": "Fill Mask",
+                  "mn": "ADBE Fill-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "All Masks",
+                  "mn": "ADBE Fill-0007",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Fill-0002",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ],
+                    "ix": 3
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Invert",
+                  "mn": "ADBE Fill-0006",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Horizontal Feather",
+                  "mn": "ADBE Fill-0003",
+                  "ix": 5,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Vertical Feather",
+                  "mn": "ADBE Fill-0004",
+                  "ix": 6,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Opacity",
+                  "mn": "ADBE Fill-0005",
+                  "ix": 7,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 7
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Fast Box Blur",
+              "np": 6,
+              "mn": "ADBE Box Blur2",
+              "ix": 2,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Blur Radius",
+                  "mn": "ADBE Box Blur2-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('SHADOW CONTROLLER').effect('Shadow Blur')('ADBE Slider Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Iterations",
+                  "mn": "ADBE Box Blur2-0002",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 3,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Blur Dimensions",
+                  "mn": "ADBE Box Blur2-0003",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 3
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Repeat Edge Pixels",
+                  "mn": "ADBE Box Blur2-0004",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                }
+              ]
+            }
+          ],
+          "w": 3840,
+          "h": 2160,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        }
+      ]
+    },
+    {
+      "id": "comp_1",
+      "layers": [
+        {
+          "ddd": 0,
+          "ind": 1,
+          "ty": 3,
+          "nm": "Control Panel",
+          "hd": true,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 0,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                0,
+                0,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                100,
+                100,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 5,
+              "nm": "Text_01",
+              "np": 3,
+              "mn": "ADBE Color Control",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Color Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Text_02",
+              "np": 3,
+              "mn": "ADBE Color Control",
+              "ix": 2,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Color Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Line_Color",
+              "np": 3,
+              "mn": "ADBE Color Control",
+              "ix": 3,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Color Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.074509806931,
+                      0.321568638086,
+                      1
+                    ],
+                    "ix": 1
+                  }
+                }
+              ]
+            },
+            {
+              "ty": 5,
+              "nm": "Scale Control",
+              "np": 3,
+              "mn": "ADBE Slider Control",
+              "ix": 4,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 0,
+                  "nm": "Slider",
+                  "mn": "ADBE Slider Control-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 50,
+                    "ix": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 2,
+          "ty": 3,
+          "nm": "Scale Control",
+          "hd": true,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 0,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                1920,
+                1080,
+                0
+              ],
+              "ix": 2,
+              "x": "var $bm_rt;\nvar x, y;\ntry {\n    x = $bm_div(thisComp.width, 2);\n    y = $bm_div(thisComp.height, 2);\n    $bm_rt = [\n        x,\n        y\n    ];\n} catch (e) {\n    $bm_rt = value;\n}\n;",
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                50,
+                50,
+                0
+              ],
+              "ix": 1,
+              "x": "var $bm_rt;\ntry {\n    $bm_rt = [\n        50,\n        50\n    ];\n} catch (e) {\n    $bm_rt = value;\n}\n;",
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                200,
+                200,
+                100
+              ],
+              "ix": 6,
+              "x": "var $bm_rt;\nvar temp;\ntry {\n    temp = thisComp.layer('Control Panel').effect('Scale Control')('ADBE Slider Control-0001');\n    $bm_rt = [\n        temp,\n        temp\n    ];\n} catch (e) {\n    $bm_rt = value;\n}\n;",
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 3,
+          "ty": 4,
+          "nm": "Shape Layer 1",
+          "parent": 2,
+          "td": 1,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                48,
+                -247.5,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                -4,
+                -630,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                50,
+                50,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "shapes": [
+            {
+              "ty": "gr",
+              "it": [
+                {
+                  "ty": "rc",
+                  "d": 1,
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      3988,
+                      1056
+                    ],
+                    "ix": 2
+                  },
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "nm": "Rectangle Path 1",
+                  "mn": "ADBE Vector Shape - Rect",
+                  "hd": false
+                },
+                {
+                  "ty": "st",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.086274995991,
+                      0.447059003045,
+                      1
+                    ],
+                    "ix": 3
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 4
+                  },
+                  "w": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 4,
+                  "bm": 0,
+                  "nm": "Stroke 1",
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "hd": false
+                },
+                {
+                  "ty": "fl",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      0.474509803922,
+                      0.474509803922,
+                      0.474509803922,
+                      1
+                    ],
+                    "ix": 4
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 5
+                  },
+                  "r": 1,
+                  "bm": 0,
+                  "nm": "Fill 1",
+                  "mn": "ADBE Vector Graphic - Fill",
+                  "hd": false
+                },
+                {
+                  "ty": "tr",
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      -4,
+                      -630
+                    ],
+                    "ix": 2
+                  },
+                  "a": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 1
+                  },
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      100,
+                      100
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 7
+                  },
+                  "sk": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "sa": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "nm": "Transform"
+                }
+              ],
+              "nm": "Rectangle 1",
+              "np": 3,
+              "cix": 2,
+              "bm": 0,
+              "ix": 1,
+              "mn": "ADBE Vector Group",
+              "hd": false
+            }
+          ],
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 4,
+          "ty": 5,
+          "nm": "Text_01",
+          "parent": 2,
+          "tt": 2,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "o": {
+                    "x": 0.75,
+                    "y": 0
+                  },
+                  "t": 24,
+                  "s": [
+                    -216.843,
+                    -17.53,
+                    0
+                  ],
+                  "to": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "ti": [
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "t": 48,
+                  "s": [
+                    -216.843,
+                    49.97,
+                    0
+                  ]
+                }
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                -410.224,
+                -56.396,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                37.5,
+                37.5,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 21,
+              "nm": "Fill",
+              "np": 9,
+              "mn": "ADBE Fill",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 10,
+                  "nm": "Fill Mask",
+                  "mn": "ADBE Fill-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "All Masks",
+                  "mn": "ADBE Fill-0007",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Fill-0002",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    "ix": 3,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('Control Panel').effect('Text_01')('ADBE Color Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Invert",
+                  "mn": "ADBE Fill-0006",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Horizontal Feather",
+                  "mn": "ADBE Fill-0003",
+                  "ix": 5,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Vertical Feather",
+                  "mn": "ADBE Fill-0004",
+                  "ix": 6,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Opacity",
+                  "mn": "ADBE Fill-0005",
+                  "ix": 7,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 7
+                  }
+                }
+              ]
+            }
+          ],
+          "t": {
+            "d": {
+              "k": [
+                {
+                  "s": {
+                    "s": 115,
+                    "f": "Montserrat-Bold",
+                    "t": "MOTIONFFFFFFFFFFF",
+                    "j": 1,
+                    "tr": 150,
+                    "lh": 138,
+                    "ls": 0,
+                    "fc": [
+                      1,
+                      1,
+                      1
+                    ]
+                  },
+                  "t": 0
+                }
+              ]
+            },
+            "p": {},
+            "m": {
+              "g": 1,
+              "a": {
+                "a": 0,
+                "k": [
+                  0,
+                  0
+                ],
+                "ix": 2
+              }
+            },
+            "a": []
+          },
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 5,
+          "ty": 4,
+          "nm": "Shape Layer 2",
+          "parent": 2,
+          "td": 1,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                48,
+                348,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                -4,
+                -630,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                50,
+                50,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "shapes": [
+            {
+              "ty": "gr",
+              "it": [
+                {
+                  "ty": "rc",
+                  "d": 1,
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      3988,
+                      1056
+                    ],
+                    "ix": 2
+                  },
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "nm": "Rectangle Path 1",
+                  "mn": "ADBE Vector Shape - Rect",
+                  "hd": false
+                },
+                {
+                  "ty": "st",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.086274995991,
+                      0.447059003045,
+                      1
+                    ],
+                    "ix": 3
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 4
+                  },
+                  "w": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 4,
+                  "bm": 0,
+                  "nm": "Stroke 1",
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "hd": false
+                },
+                {
+                  "ty": "fl",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      0.474509803922,
+                      0.474509803922,
+                      0.474509803922,
+                      1
+                    ],
+                    "ix": 4
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 5
+                  },
+                  "r": 1,
+                  "bm": 0,
+                  "nm": "Fill 1",
+                  "mn": "ADBE Vector Graphic - Fill",
+                  "hd": false
+                },
+                {
+                  "ty": "tr",
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      -4,
+                      -630
+                    ],
+                    "ix": 2
+                  },
+                  "a": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 1
+                  },
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      100,
+                      100
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 7
+                  },
+                  "sk": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "sa": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "nm": "Transform"
+                }
+              ],
+              "nm": "Rectangle 1",
+              "np": 3,
+              "cix": 2,
+              "bm": 0,
+              "ix": 1,
+              "mn": "ADBE Vector Group",
+              "hd": false
+            }
+          ],
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 6,
+          "ty": 5,
+          "nm": "Text_02",
+          "parent": 2,
+          "tt": 2,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 0,
+              "k": 0,
+              "ix": 10
+            },
+            "p": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": 0,
+                    "y": 1
+                  },
+                  "o": {
+                    "x": 0.75,
+                    "y": 0
+                  },
+                  "t": 24,
+                  "s": [
+                    298.5,
+                    111,
+                    0
+                  ],
+                  "to": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "ti": [
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "t": 48,
+                  "s": [
+                    298.5,
+                    50,
+                    0
+                  ]
+                }
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                330.69,
+                -56.316,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 0,
+              "k": [
+                37.5,
+                37.5,
+                100
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "ef": [
+            {
+              "ty": 21,
+              "nm": "Fill",
+              "np": 9,
+              "mn": "ADBE Fill",
+              "ix": 1,
+              "en": 1,
+              "ef": [
+                {
+                  "ty": 10,
+                  "nm": "Fill Mask",
+                  "mn": "ADBE Fill-0001",
+                  "ix": 1,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 1
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "All Masks",
+                  "mn": "ADBE Fill-0007",
+                  "ix": 2,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": 2,
+                  "nm": "Color",
+                  "mn": "ADBE Fill-0002",
+                  "ix": 3,
+                  "v": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    "ix": 3,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('Control Panel').effect('Text_02')('ADBE Color Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  }
+                },
+                {
+                  "ty": 7,
+                  "nm": "Invert",
+                  "mn": "ADBE Fill-0006",
+                  "ix": 4,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Horizontal Feather",
+                  "mn": "ADBE Fill-0003",
+                  "ix": 5,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Vertical Feather",
+                  "mn": "ADBE Fill-0004",
+                  "ix": 6,
+                  "v": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  }
+                },
+                {
+                  "ty": 0,
+                  "nm": "Opacity",
+                  "mn": "ADBE Fill-0005",
+                  "ix": 7,
+                  "v": {
+                    "a": 0,
+                    "k": 1,
+                    "ix": 7
+                  }
+                }
+              ]
+            }
+          ],
+          "t": {
+            "d": {
+              "k": [
+                {
+                  "s": {
+                    "s": 115,
+                    "f": "Montserrat-Bold",
+                    "t": "DESIGNFFFFFFFFFFF",
+                    "j": 0,
+                    "tr": 150,
+                    "lh": 138,
+                    "ls": 0,
+                    "fc": [
+                      1,
+                      1,
+                      1
+                    ]
+                  },
+                  "t": 0
+                }
+              ]
+            },
+            "p": {},
+            "m": {
+              "g": 1,
+              "a": {
+                "a": 0,
+                "k": [
+                  0,
+                  0
+                ],
+                "ix": 2
+              }
+            },
+            "a": []
+          },
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 7,
+          "ty": 4,
+          "nm": "Line 2",
+          "parent": 2,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": [
+                      0
+                    ],
+                    "y": [
+                      1
+                    ]
+                  },
+                  "o": {
+                    "x": [
+                      0.75
+                    ],
+                    "y": [
+                      0
+                    ]
+                  },
+                  "t": 24,
+                  "s": [
+                    0
+                  ]
+                },
+                {
+                  "t": 48,
+                  "s": [
+                    45
+                  ]
+                }
+              ],
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                50,
+                50,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                -616,
+                -19,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "y": [
+                      1,
+                      1,
+                      1
+                    ]
+                  },
+                  "o": {
+                    "x": [
+                      0.75,
+                      0.75,
+                      0.75
+                    ],
+                    "y": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  "t": 0,
+                  "s": [
+                    50,
+                    0,
+                    100
+                  ]
+                },
+                {
+                  "t": 24,
+                  "s": [
+                    50,
+                    75,
+                    100
+                  ]
+                }
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "shapes": [
+            {
+              "ty": "gr",
+              "it": [
+                {
+                  "ty": "rc",
+                  "d": 1,
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      18,
+                      350
+                    ],
+                    "ix": 2
+                  },
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "nm": "Rectangle Path 1",
+                  "mn": "ADBE Vector Shape - Rect",
+                  "hd": false
+                },
+                {
+                  "ty": "st",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.086274995991,
+                      0.447059003045,
+                      1
+                    ],
+                    "ix": 3
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 4
+                  },
+                  "w": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 4,
+                  "bm": 0,
+                  "nm": "Stroke 1",
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "hd": false
+                },
+                {
+                  "ty": "fl",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.043137254902,
+                      0.372549019608,
+                      1
+                    ],
+                    "ix": 4,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('Control Panel').effect('Line_Color')('ADBE Color Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 5
+                  },
+                  "r": 1,
+                  "bm": 0,
+                  "nm": "Fill 1",
+                  "mn": "ADBE Vector Graphic - Fill",
+                  "hd": false
+                },
+                {
+                  "ty": "tr",
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      -616,
+                      -19
+                    ],
+                    "ix": 2
+                  },
+                  "a": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 1
+                  },
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      100,
+                      100
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 7
+                  },
+                  "sk": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "sa": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "nm": "Transform"
+                }
+              ],
+              "nm": "Rectangle 1",
+              "np": 3,
+              "cix": 2,
+              "bm": 0,
+              "ix": 1,
+              "mn": "ADBE Vector Group",
+              "hd": false
+            }
+          ],
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        },
+        {
+          "ddd": 0,
+          "ind": 8,
+          "ty": 4,
+          "nm": "Line",
+          "parent": 2,
+          "sr": 1,
+          "ks": {
+            "o": {
+              "a": 0,
+              "k": 100,
+              "ix": 11
+            },
+            "r": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": [
+                      0
+                    ],
+                    "y": [
+                      1
+                    ]
+                  },
+                  "o": {
+                    "x": [
+                      0.75
+                    ],
+                    "y": [
+                      0
+                    ]
+                  },
+                  "t": 24,
+                  "s": [
+                    0
+                  ]
+                },
+                {
+                  "t": 48,
+                  "s": [
+                    -45
+                  ]
+                }
+              ],
+              "ix": 10
+            },
+            "p": {
+              "a": 0,
+              "k": [
+                50,
+                50,
+                0
+              ],
+              "ix": 2,
+              "l": 2
+            },
+            "a": {
+              "a": 0,
+              "k": [
+                -616,
+                -19,
+                0
+              ],
+              "ix": 1,
+              "l": 2
+            },
+            "s": {
+              "a": 1,
+              "k": [
+                {
+                  "i": {
+                    "x": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "y": [
+                      1,
+                      1,
+                      1
+                    ]
+                  },
+                  "o": {
+                    "x": [
+                      0.75,
+                      0.75,
+                      0.75
+                    ],
+                    "y": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  "t": 0,
+                  "s": [
+                    50,
+                    0,
+                    100
+                  ]
+                },
+                {
+                  "t": 24,
+                  "s": [
+                    50,
+                    75,
+                    100
+                  ]
+                }
+              ],
+              "ix": 6,
+              "l": 2
+            }
+          },
+          "ao": 0,
+          "shapes": [
+            {
+              "ty": "gr",
+              "it": [
+                {
+                  "ty": "rc",
+                  "d": 1,
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      18,
+                      350
+                    ],
+                    "ix": 2
+                  },
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "nm": "Rectangle Path 1",
+                  "mn": "ADBE Vector Shape - Rect",
+                  "hd": false
+                },
+                {
+                  "ty": "st",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.086274995991,
+                      0.447059003045,
+                      1
+                    ],
+                    "ix": 3
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 4
+                  },
+                  "w": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 4,
+                  "bm": 0,
+                  "nm": "Stroke 1",
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "hd": false
+                },
+                {
+                  "ty": "fl",
+                  "c": {
+                    "a": 0,
+                    "k": [
+                      1,
+                      0.043137254902,
+                      0.372549019608,
+                      1
+                    ],
+                    "ix": 4,
+                    "x": "var $bm_rt;\ntry {\n    $bm_rt = thisComp.layer('Control Panel').effect('Line_Color')('ADBE Color Control-0001');\n} catch (e) {\n    $bm_rt = value;\n}\n;"
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 5
+                  },
+                  "r": 1,
+                  "bm": 0,
+                  "nm": "Fill 1",
+                  "mn": "ADBE Vector Graphic - Fill",
+                  "hd": false
+                },
+                {
+                  "ty": "tr",
+                  "p": {
+                    "a": 0,
+                    "k": [
+                      -616,
+                      -19
+                    ],
+                    "ix": 2
+                  },
+                  "a": {
+                    "a": 0,
+                    "k": [
+                      0,
+                      0
+                    ],
+                    "ix": 1
+                  },
+                  "s": {
+                    "a": 0,
+                    "k": [
+                      100,
+                      100
+                    ],
+                    "ix": 3
+                  },
+                  "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 6
+                  },
+                  "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 7
+                  },
+                  "sk": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 4
+                  },
+                  "sa": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 5
+                  },
+                  "nm": "Transform"
+                }
+              ],
+              "nm": "Rectangle 1",
+              "np": 3,
+              "cix": 2,
+              "bm": 0,
+              "ix": 1,
+              "mn": "ADBE Vector Group",
+              "hd": false
+            }
+          ],
+          "ip": 0,
+          "op": 720,
+          "st": 0,
+          "bm": 0
+        }
+      ]
+    }
+  ],
+  "fonts": {
+    "list": [
+      {
+        "fName": "Montserrat-Bold",
+        "fFamily": "Montserrat",
+        "fStyle": "Bold",
+        "ascent": 74.1989135742188
+      }
+    ]
+  },
+  "layers": [
+    {
+      "ddd": 1,
+      "ind": 1,
+      "ty": 0,
+      "nm": "Title 1",
+      "refId": "comp_0",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 0,
+          "k": 100,
+          "ix": 11
+        },
+        "rx": {
+          "a": 0,
+          "k": 0,
+          "ix": 8
+        },
+        "ry": {
+          "a": 0,
+          "k": 0,
+          "ix": 9
+        },
+        "rz": {
+          "a": 0,
+          "k": 0,
+          "ix": 10
+        },
+        "or": {
+          "a": 0,
+          "k": [
+            0,
+            0,
+            0
+          ],
+          "ix": 7
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            960,
+            540,
+            0
+          ],
+          "ix": 2
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            500,
+            500,
+            0
+          ],
+          "ix": 1
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            100,
+            100,
+            100
+          ],
+          "ix": 6
+        }
+      },
+      "ao": 0,
+      "w": 1000,
+      "h": 1000,
+      "ip": 0,
+      "op": 720,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": [],
+  "chars": [
+    {
+      "ch": "D",
+      "size": 115,
+      "style": "Bold",
+      "w": 82.6,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        21.35
+                      ],
+                      [
+                        23.062,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        23.062,
+                        0
+                      ],
+                      [
+                        0,
+                        -21.35
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        40.384,
+                        0
+                      ],
+                      [
+                        79.257,
+                        -35.248
+                      ],
+                      [
+                        40.384,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "D",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              },
+              {
+                "ind": 1,
+                "ty": "sh",
+                "ix": 2,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        -13.495
+                      ],
+                      [
+                        13.998,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        13.998,
+                        0
+                      ],
+                      [
+                        0,
+                        13.495
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        24.673,
+                        -13.394
+                      ],
+                      [
+                        24.673,
+                        -57.101
+                      ],
+                      [
+                        39.578,
+                        -57.101
+                      ],
+                      [
+                        62.741,
+                        -35.248
+                      ],
+                      [
+                        39.578,
+                        -13.394
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "D",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "D",
+            "np": 5,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "E",
+      "size": 115,
+      "style": "Bold",
+      "w": 67.1,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        24.573,
+                        -13.092
+                      ],
+                      [
+                        24.573,
+                        -29.407
+                      ],
+                      [
+                        57.303,
+                        -29.407
+                      ],
+                      [
+                        57.303,
+                        -42.096
+                      ],
+                      [
+                        24.573,
+                        -42.096
+                      ],
+                      [
+                        24.573,
+                        -57.404
+                      ],
+                      [
+                        61.633,
+                        -57.404
+                      ],
+                      [
+                        61.633,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        62.943,
+                        0
+                      ],
+                      [
+                        62.943,
+                        -13.092
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "E",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "E",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "S",
+      "size": 115,
+      "style": "Bold",
+      "w": 63.8,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        -11.179,
+                        0
+                      ],
+                      [
+                        0,
+                        11.783
+                      ],
+                      [
+                        0,
+                        12.991
+                      ],
+                      [
+                        -9.668,
+                        0
+                      ],
+                      [
+                        -6.546,
+                        -3.726
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        8.862,
+                        0
+                      ],
+                      [
+                        0,
+                        -11.984
+                      ],
+                      [
+                        0,
+                        -13.193
+                      ],
+                      [
+                        9.668,
+                        0
+                      ],
+                      [
+                        5.942,
+                        4.33
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        20.142,
+                        0
+                      ],
+                      [
+                        0,
+                        -25.882
+                      ],
+                      [
+                        0,
+                        -4.431
+                      ],
+                      [
+                        6.244,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        -6.546,
+                        -4.129
+                      ],
+                      [
+                        -20.041,
+                        0
+                      ],
+                      [
+                        0,
+                        26.184
+                      ],
+                      [
+                        0,
+                        4.33
+                      ],
+                      [
+                        -8.459,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        6.244,
+                        4.834
+                      ]
+                    ],
+                    "v": [
+                      [
+                        31.522,
+                        1.208
+                      ],
+                      [
+                        61.432,
+                        -20.645
+                      ],
+                      [
+                        20.444,
+                        -50.555
+                      ],
+                      [
+                        33.838,
+                        -58.612
+                      ],
+                      [
+                        53.375,
+                        -53.073
+                      ],
+                      [
+                        58.411,
+                        -65.46
+                      ],
+                      [
+                        33.939,
+                        -71.704
+                      ],
+                      [
+                        4.23,
+                        -49.75
+                      ],
+                      [
+                        45.218,
+                        -19.437
+                      ],
+                      [
+                        31.622,
+                        -11.884
+                      ],
+                      [
+                        8.359,
+                        -19.235
+                      ],
+                      [
+                        2.82,
+                        -6.949
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "S",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "S",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "I",
+      "size": 115,
+      "style": "Bold",
+      "w": 32.8,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        24.673,
+                        0
+                      ],
+                      [
+                        24.673,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "I",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "I",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "G",
+      "size": 115,
+      "style": "Bold",
+      "w": 77.1,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        4.431,
+                        0
+                      ],
+                      [
+                        0,
+                        13.193
+                      ],
+                      [
+                        -13.696,
+                        0
+                      ],
+                      [
+                        -5.136,
+                        -5.438
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        12.387,
+                        0
+                      ],
+                      [
+                        0,
+                        -21.249
+                      ],
+                      [
+                        -22.156,
+                        0
+                      ],
+                      [
+                        -7.755,
+                        5.841
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        -4.129,
+                        2.216
+                      ],
+                      [
+                        -13.495,
+                        0
+                      ],
+                      [
+                        0,
+                        -13.394
+                      ],
+                      [
+                        7.15,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        -6.848,
+                        -7.956
+                      ],
+                      [
+                        -22.458,
+                        0
+                      ],
+                      [
+                        0,
+                        21.249
+                      ],
+                      [
+                        10.071,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        55.994,
+                        -15.71
+                      ],
+                      [
+                        43.304,
+                        -12.689
+                      ],
+                      [
+                        20.444,
+                        -35.248
+                      ],
+                      [
+                        43.506,
+                        -57.806
+                      ],
+                      [
+                        61.734,
+                        -49.85
+                      ],
+                      [
+                        72.208,
+                        -59.518
+                      ],
+                      [
+                        42.7,
+                        -71.704
+                      ],
+                      [
+                        3.928,
+                        -35.248
+                      ],
+                      [
+                        42.398,
+                        1.208
+                      ],
+                      [
+                        70.898,
+                        -7.755
+                      ],
+                      [
+                        70.898,
+                        -36.356
+                      ],
+                      [
+                        55.994,
+                        -36.356
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "G",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "G",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "N",
+      "size": 115,
+      "style": "Bold",
+      "w": 80.8,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        56.9,
+                        -70.496
+                      ],
+                      [
+                        56.9,
+                        -27.695
+                      ],
+                      [
+                        21.854,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        24.472,
+                        0
+                      ],
+                      [
+                        24.472,
+                        -42.801
+                      ],
+                      [
+                        59.619,
+                        0
+                      ],
+                      [
+                        73.013,
+                        0
+                      ],
+                      [
+                        73.013,
+                        -70.496
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "N",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "N",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "F",
+      "size": 115,
+      "style": "Bold",
+      "w": 63.9,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        61.633,
+                        -57.404
+                      ],
+                      [
+                        61.633,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        24.673,
+                        0
+                      ],
+                      [
+                        24.673,
+                        -25.681
+                      ],
+                      [
+                        57.303,
+                        -25.681
+                      ],
+                      [
+                        57.303,
+                        -38.773
+                      ],
+                      [
+                        24.673,
+                        -38.773
+                      ],
+                      [
+                        24.673,
+                        -57.404
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "F",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "F",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "M",
+      "size": 115,
+      "style": "Bold",
+      "w": 95.5,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        87.817,
+                        0
+                      ],
+                      [
+                        87.616,
+                        -70.496
+                      ],
+                      [
+                        74.222,
+                        -70.496
+                      ],
+                      [
+                        48.239,
+                        -26.688
+                      ],
+                      [
+                        21.854,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        -70.496
+                      ],
+                      [
+                        8.359,
+                        0
+                      ],
+                      [
+                        23.666,
+                        0
+                      ],
+                      [
+                        23.666,
+                        -41.391
+                      ],
+                      [
+                        44.312,
+                        -7.452
+                      ],
+                      [
+                        51.663,
+                        -7.452
+                      ],
+                      [
+                        72.409,
+                        -42.297
+                      ],
+                      [
+                        72.51,
+                        0
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "M",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "M",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "O",
+      "size": 115,
+      "style": "Bold",
+      "w": 84.4,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        -22.256,
+                        0
+                      ],
+                      [
+                        0,
+                        21.048
+                      ],
+                      [
+                        22.156,
+                        0
+                      ],
+                      [
+                        0,
+                        -20.947
+                      ]
+                    ],
+                    "o": [
+                      [
+                        22.156,
+                        0
+                      ],
+                      [
+                        0,
+                        -21.048
+                      ],
+                      [
+                        -22.256,
+                        0
+                      ],
+                      [
+                        0,
+                        20.947
+                      ]
+                    ],
+                    "v": [
+                      [
+                        42.499,
+                        1.208
+                      ],
+                      [
+                        81.07,
+                        -35.248
+                      ],
+                      [
+                        42.499,
+                        -71.704
+                      ],
+                      [
+                        3.928,
+                        -35.248
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "O",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              },
+              {
+                "ind": 1,
+                "ty": "sh",
+                "ix": 2,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        12.589,
+                        0
+                      ],
+                      [
+                        0,
+                        13.394
+                      ],
+                      [
+                        -12.589,
+                        0
+                      ],
+                      [
+                        0,
+                        -13.394
+                      ]
+                    ],
+                    "o": [
+                      [
+                        -12.589,
+                        0
+                      ],
+                      [
+                        0,
+                        -13.394
+                      ],
+                      [
+                        12.589,
+                        0
+                      ],
+                      [
+                        0,
+                        13.394
+                      ]
+                    ],
+                    "v": [
+                      [
+                        42.499,
+                        -12.689
+                      ],
+                      [
+                        20.444,
+                        -35.248
+                      ],
+                      [
+                        42.499,
+                        -57.806
+                      ],
+                      [
+                        64.554,
+                        -35.248
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "O",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "O",
+            "np": 5,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    },
+    {
+      "ch": "T",
+      "size": 115,
+      "style": "Bold",
+      "w": 62.8,
+      "data": {
+        "shapes": [
+          {
+            "ty": "gr",
+            "it": [
+              {
+                "ind": 0,
+                "ty": "sh",
+                "ix": 1,
+                "ks": {
+                  "a": 0,
+                  "k": {
+                    "i": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "o": [
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        0
+                      ]
+                    ],
+                    "v": [
+                      [
+                        22.961,
+                        0
+                      ],
+                      [
+                        39.276,
+                        0
+                      ],
+                      [
+                        39.276,
+                        -57.202
+                      ],
+                      [
+                        61.835,
+                        -57.202
+                      ],
+                      [
+                        61.835,
+                        -70.496
+                      ],
+                      [
+                        0.403,
+                        -70.496
+                      ],
+                      [
+                        0.403,
+                        -57.202
+                      ],
+                      [
+                        22.961,
+                        -57.202
+                      ]
+                    ],
+                    "c": true
+                  },
+                  "ix": 2
+                },
+                "nm": "T",
+                "mn": "ADBE Vector Shape - Group",
+                "hd": false
+              }
+            ],
+            "nm": "T",
+            "np": 3,
+            "cix": 2,
+            "bm": 0,
+            "ix": 1,
+            "mn": "ADBE Vector Group",
+            "hd": false
+          }
+        ]
+      },
+      "fFamily": "Montserrat"
+    }
+  ]
+}

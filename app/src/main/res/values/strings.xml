@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinetic Titles</string>
+    <string name="tf_template_title">Kinetic Titles</string>
+    <string name="tf_filepath">KineticTitles</string>
+
+    <string name="admob_app_id">ca-app-pub-8950538233334767~3624971893</string>
+    <string name="admob_banner_id">ca-app-pub-8950538233334767/7372645216</string>
+    <string name="admob_inter_id">ca-app-pub-8950538233334767/4731644780</string>
+    <string name="admob_native_id">ca-app-pub-8950538233334767/4586699779</string>
+    <string name="admob_rewarded">ca-app-pub-8950538233334767/8525944788</string>
+
+    <string name="facebook_banner_id">IMG_16_9_APP_INSTALL#</string>
+    <string name="facebook_banner_native">IMG_16_9_APP_INSTALL#</string>
+    <string name="facebook_inter_id">IMG_16_9_APP_INSTALL#</string>
+    <string name="facebook_native_id">IMG_16_9_APP_INSTALL#</string>
+
+
+    <string name="is_show_admob_native">true</string>
+
+    <string name="subscription_sku_monthly">com.text.flow.subscription.monthly</string>
+    <string name="subscription_sku_threemonthly">com.text.flow.subscription.threemonth</string>
+    <string name="subscription_sku_annually">com.text.flow.subscription.annually</string>
+    <string name="subscription_sku_single_item">com.text.flow.subscription.single.item</string>
+    <string name="iap_license_base64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhRxaId5JGbMdo0L1AIuew+LNAvveF/0wZs1D4/ZCJqImKg1NqeEzRroSg6zmFiSIY8uWS591XtyAgKvIIIg56uIJbLBGDD8bURax042WGWOk4iSCiNB7n6OO9cRuwedV7K+hZFOH3319/7xpD1YpGNg1bBYAM7VSL1uqc1U1NWNoDfLEPq0y4HNxsg3ZYtcI9JxHyJkBhzOANBXrShqmXZgk5FYNPKzmuHpvtx/hIF9S0UnfebcNNmZdN+WwJx2g7JsPozQzxep9Emc1q9StP63BjUpHuIpQMGxAIDdpnQqGc2dz6SVYymCAJ4HGx0LYdhYOANz0y1ITHztyB9/sNwIDAQAB</string>
+
+    <string name="pixabay_key">19002662-5c0579679928fd57faec7d525</string>
+
+    <string name="tf_title_sub_1_month">1 Month</string>
+    <string name="tf_title_3_days_free_trial">3 days free trial</string>
+    <string name="tf_title_price_1_month">$2.9</string>
+    <string name="tf_title_sub_3_months">3 Months</string>
+    <string name="tf_title_price_3_months">$7.9</string>
+    <string name="tf_title_sub_12_months">12 Months</string>
+    <string name="tf_title_sub_save_25">Save 25%</string>
+    <string name="tf_title_price_1_year">$25.9</string>
+
+    <string name="tf_feedback_email">awakenstudio@outlook.com</string>
+
+    <string name="tf_guideline_add_text">Add text from here</string>
+    <string name="tf_guideline_edit_the_text">Edit the text and element colors and Position of the text from here
+    </string>
+    <string name="tf_guideline_set_background">Set Background from here</string>
+    <string name="tf_guideline_add_background">You can add the backgrounds like videos , solid &amp; gradient color or
+        dynamic backgrounds from here
+    </string>
+    <string name="tf_guideline_preview_animation">Preview animation from here</string>
+    <string name="tf_guideline_preview_current_animation">Preview your current animation effect from here</string>
+    <string name="tf_guideline_create_video">Create video from here</string>
+    <string name="tf_guideline_get_animation_video">Get your animated video in mp4 format from here</string>
+
+    <string name="tf_msg_template_locked">This Template is locked</string>
+    <string name="tf_msg_become_premium_mem">Become a Intro Maker Premium member to unlock this Template</string>
+    <string name="tf_msg_become_premium_mem2">Become a Intro Maker Premium member to unlock</string>
+    <string name="tf_msg_single_template_used">Intro Maker Premium Single template is has been used</string>
+    <string name="tf_watermark">Made with \nIntro Maker</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="tf_app_update_available">Update available</string>
+    <string name="tf_app_update_now">update now</string>
+    <string name="tf_btn_play_title">preview</string>
+    <string name="tf_btn_export_title">export</string>
+    <string name="tf_btn_save_title">save</string>
+    <string name="tf_title_select_background_type">Select background type</string>
+    <string name="tf_btn_dynamic">Dynamic</string>
+    <string name="tf_btn_video">Video</string>
+    <string name="tf_btn_image">Image</string>
+    <string name="tf_btn_solid">Solid</string>
+    <string name="tf_btn_replay">Replay</string>
+    <string name="tf_btn_use">Use</string>
+
+    <string name="tf_btn_gradient">Gradient</string>
+    <string name="tf_title_select_dynamic_animated_background">Select dynamic animated background</string>
+    <string name="tf_title_change_element_colors">Change element colors</string>
+    <string name="tf_title_darken">Darken</string>
+    <string name="tf_title_set_solid_color">Set Solid color</string>
+    <string name="tf_title_set_gradient_color">Set Gradient color</string>
+    <string name="tf_title_set_background_video">Set background video</string>
+    <string name="td_btn_from_internal_storage">From \ninternal storage</string>
+    <string name="tf_btn_download_from_library">Download \nfrom library</string>
+    <string name="tf_title_change_text">Change text</string>
+    <string name="tf_title_change_size_and_position">Change size and position</string>
+    <string name="tf_title_scale">scale</string>
+    <string name="tf_title_position_x">Position X</string>
+    <string name="tf_title_position_y">Position Y</string>
+    <string name="tf_title_become_a">Become A</string>
+    <string name="tf_title_premium">Premium</string>
+    <string name="tf_title_no_watermark">No watermark</string>
+    <string name="tf_title_no_ads">No Ads</string>
+    <string name="tf_title_full_hd_elements">Full HD elements</string>
+    <string name="tf_title_full_video_background">Full video background</string>
+    <string name="tf_title_set_image_background">Set image background</string>
+    <string name="tf_title_change_color_of_element">Change Color of element</string>
+    <string name="tf_title_change_color_dynamic_background">Change Color ( Dynamic background )</string>
+    <string name="tf_title_change_color">Change Color</string>
+    <string name="tf_title_pick_an_image">Pick an image</string>
+    <string name="tf_title_change_text_color">Change Text Color</string>
+    <string name="tf_title_change_font">Change Font</string>
+    <string name="tf_title_pick_a_video">Pick a video</string>
+    <string name="tf_btn_edit">edit</string>
+    <string name="tf_title_getting_hd_image">Getting HD image</string>
+    <string name="tf_btn_set">Set</string>
+    <string name="tf_btn_close">Close</string>
+    <string name="tf_title_ten_blood">TEN BLOOD</string>
+    <string name="tf_title_credits">Credits…</string>
+    <string name="tf_btn_ok">Ok</string>
+    <string name="tf_title_video_is_downloading">Video is downloading</string>
+    <string name="tf_btn_cancel">cancel</string>
+    <string name="tf_title_life_time">Life time</string>
+    <string name="tf_title_price_6">$6</string>
+    <string name="tf_title_resolution">Resolution</string>
+    <string name="tf_title_video_size">3 MB</string>
+    <string name="tf_title_dummy_content">Content title</string>
+    <string name="tf_title_warning_close_app">Do not close screen or open another app</string>
+    <string name="tf_title_rendering_process">Rendering process wil take some time</string>
+    <string name="tf_title_share_creation">Share your awesome creation!</string>
+    <string name="tf_btn_open_video">Open video</string>
+
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_experience">How was your experience with us?</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_suggestions">"Suggest us what went wrong and we'll work on it!"</string>
+    <string name="tf_msg_something_went_wrong">Something went wrong!</string>
+    <string name="tf_btn_refresh">refresh</string>
+    <string name="tf_msg_not_connected_to_internet">You are not connected to Internet!</string>
+    <string name="tf_title_getting_templates">Getting templates</string>
+    <string name="tf_title_no_favourites_found">No favourites found!</string>
+    <string name="tf_title_add_favourites_from_templates_tab">You can add favourites from templates tab</string>
+    <string name="tf_title_hex">hex</string>
+    <string name="tf_title_preview_is_loading">Preview is loading please wait</string>
+    <string name="tf_title_loading_an_ad">Loading an AD please wait</string>
+    <string name="tf_title_see_ad">see ad</string>
+    <string name="tf_title_get_premium">get premium</string>
+    <string name="tf_title_category">Category</string>
+    <string name="tf_title_video_is_not_created">Video is not created properly?</string>
+    <string name="tf_btn_click_here">click here</string>
+    <string name="tf_btn_retry">retry</string>
+    <string name="tf_title_progress">progress</string>
+    <string name="tf_title_premium_get">Get </string>
+    <string name="tf_title_do_more_with_premium">Do more with premium feature</string>
+    <string name="tf_title_full_hd_video_assets">Full HD video assets</string>
+    <string name="tf_title_no_ads_experience">No Ads experience</string>
+    <string name="tf_title_choose_a_plan">Choose a plan</string>
+    <string name="tf_title_automatically_charge_sub">After the trial period, you will be automatically charged according
+        to your selected subscription.
+    </string>
+    <string name="tf_title_cancel_subscription">You can cancel your subscription or free trial by cancelling your
+        subscription through you Google Play account settings, or it will automatically renew.e
+    </string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_splash_screen1">SplashScreen1</string>
+
+</resources>

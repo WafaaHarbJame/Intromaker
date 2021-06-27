@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_type">
+        <item>Dynamic</item>
+        <item>Solid</item>
+        <item>Gradient</item>
+    </string-array>
+    <string-array name="categories">
+        <item>General</item>
+        <item>Minimal Design</item>
+        <item>Technology</item>
+        <item>Celebration and greetings</item>
+        <item>Gaming</item>
+        <item>Solid</item>
+        <item>Gradient</item>
+        <item>Cooking</item>
+        <item>Education</item>
+        <item>Sports</item>
+        <item>Heath and fitness</item>
+        <item>Fashion</item>
+        <item>Motivation</item>
+    </string-array>
+    <string-array name="render_entries">
+        <item>software encoder</item>
+        <item>hardware encoder</item>
+    </string-array>
+    <string-array name="render_values">
+        <item>software_encoder</item>
+        <item>hardware_encoder</item>
+    </string-array>
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    <string-array name="resolution_dimen">
+        <item>540p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+</resources>

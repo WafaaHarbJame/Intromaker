@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="800.0dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tf_title_select_background_type" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/background_type_chip_group"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip"
+                        app:checkedChip="@id/chip_dynamic"
+                        app:chipSpacingHorizontal="8.0dip"
+                        app:singleLine="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_dynamic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/tf_btn_dynamic"
+                            app:chipBackgroundColor="@color/chip_select_color"
+                            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/tf_btn_video"
+                            app:chipBackgroundColor="@color/chip_select_color"
+                            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/tf_btn_image"
+                            app:chipBackgroundColor="@color/chip_select_color"
+                            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_solid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/tf_btn_solid"
+                            app:chipBackgroundColor="@color/chip_select_color"
+                            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_gradient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="@string/tf_btn_gradient"
+                            app:chipBackgroundColor="@color/chip_select_color"
+                            style="@style/Widget.MaterialComponents.Chip.Choice" />
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/dynamic_bg_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_select_dynamic_animated_background" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDynamicBgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/bs_dynamic_color_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8.0dip">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tf_title_change_element_colors" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_dynamic_color_property"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="4.0dip"
+                        android:layout_marginEnd="4.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="8.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="170.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_darken"
+                        android:layout_weight="2.0" />
+
+                    <SeekBar
+                        android:id="@+id/transparency_seekbar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:progress="0"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/solid_bg_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="8.0dip">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_set_solid_color" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_solid_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:backgroundTint="@color/colorPrimaryLessLight"
+                    app:cardCornerRadius="30.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/gradient_bg_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="8.0dip">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_set_gradient_color" />
+
+                    <include layout="@layout/card_gradient" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/video_picker_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="8.0dip">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_set_background_video" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120.0dip">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/video_picker_local_storage"
+                            android:background="?android:selectableItemBackground"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="4.0dip"
+                            android:layout_weight="1.0"
+                            android:layout_marginEnd="2.0dip"
+                            android:elevation="10.0dip"
+                            android:backgroundTint="@color/colorPrimaryLessLight"
+                            app:cardCornerRadius="12.0dip">
+
+                            <RelativeLayout
+                                android:background="?android:selectableItemBackground"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/element_bg2"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:textSize="18.0sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/td_btn_from_internal_storage"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/video_picker_library"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="4.0dip"
+                            android:layout_weight="1.0"
+                            android:layout_marginStart="2.0dip"
+                            android:elevation="10.0dip"
+                            android:backgroundTint="@color/colorPrimaryLessLight"
+                            app:cardCornerRadius="12.0dip">
+
+                            <RelativeLayout
+                                android:background="?android:selectableItemBackground"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/element_bg2"
+                                    android:scaleType="centerCrop"
+                                    android:rotationY="180.0" />
+
+                                <TextView
+                                    android:textSize="18.0sp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tf_btn_download_from_library"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="8.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="170.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_title_darken"
+                        android:layout_weight="2.0" />
+
+                    <SeekBar
+                        android:id="@+id/transparency_seekbar_for_video"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:progress="0"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/background_panel_image" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

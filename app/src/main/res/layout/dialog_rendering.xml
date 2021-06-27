@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dialog_rendering_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rendering_process"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/dialog_animation_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:scaleType="centerInside" />
+
+                    <ProgressBar
+                        android:id="@+id/dialog_rendering_progress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/rendering_process_warning"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="14.0sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tf_title_warning_close_app" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tf_title_rendering_process" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/share_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip">
+
+                            <TextView
+                                android:textSize="18.0sp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tf_title_share_creation" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:padding="8.0dip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/export_share_wa"
+                                android:background="@android:color/transparent"
+                                android:padding="4.0dip"
+                                android:layout_width="50.0dip"
+                                android:layout_height="50.0dip"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_share_whatsapp"
+                                android:layout_weight="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/export_share_insta"
+                                android:background="@android:color/transparent"
+                                android:padding="4.0dip"
+                                android:layout_width="50.0dip"
+                                android:layout_height="50.0dip"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_share_insta"
+                                android:layout_weight="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/export_share_tw"
+                                android:background="@android:color/transparent"
+                                android:padding="4.0dip"
+                                android:layout_width="50.0dip"
+                                android:layout_height="50.0dip"
+                                android:src="@drawable/ic_share_twitter"
+                                android:scaleType="centerInside"
+                                android:layout_weight="1.0" />
+
+                            <ImageButton
+                                android:id="@+id/export_share"
+                                android:background="@android:color/transparent"
+                                android:padding="4.0dip"
+                                android:layout_width="50.0dip"
+                                android:src="@drawable/ic_share"
+                                android:layout_height="50.0dip"
+                                android:scaleType="centerInside"
+                                android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0" />
+
+                        <Button
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/dialog_rendering_button_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4.0dip"
+                            android:text="@string/tf_btn_close" />
+
+                        <Button
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/dialog_rendering_open_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4.0dip"
+                            android:text="@string/tf_btn_open_video" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/rendering_switch_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="12.0sp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_card"
+                        android:padding="4.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:text="@string/tf_title_video_is_not_created" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/dialog_rendering_switch_rendering_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_btn_click_here" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/export_o_container"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_white_border_background"
+                    android:padding="4.0dip"
+                    android:clipChildren="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8.0dip">
+
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"
+                        android:padding="4.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:text="Join official Intro Maker accounts" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip">
+
+                        <ImageButton
+                            android:id="@+id/export_o_youtube"
+                            android:background="@android:color/transparent"
+                            android:padding="4.0dip"
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:src="@drawable/youtube_icon"
+                            android:scaleType="centerInside"
+                            android:layout_weight="1.0" />
+
+                        <ImageButton
+                            android:id="@+id/export_o_instagram"
+                            android:background="@android:color/transparent"
+                            android:padding="4.0dip"
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:scaleType="centerInside"
+                            android:layout_weight="1.0" />
+
+                        <ImageButton
+                            android:id="@+id/export_o_facebook"
+                            android:background="@android:color/transparent"
+                            android:padding="4.0dip"
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:src="@drawable/facebook_icon"
+                            android:scaleType="centerInside"
+                            android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--                <com.facebook.ads.NativeAdLayout android:orientation="vertical"-->
+                <!--                    android:id="@+id/rendering_dialog_native_container"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content"/>-->
+
+                <!--  This is your template view -->
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/my_template"
+                    app:gnt_template_type="@layout/gnt_medium_template_view "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/resolution_selection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/export_res_list"
+                android:padding="12.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="@color/colorPrimaryGeyser"
+                android:layout_gravity="center"
+                android:id="@+id/dialog_rendering_cancel_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tf_btn_cancel"
+                android:backgroundTint="@android:color/transparent"
+                style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_gravity="end"
+            android:id="@+id/rendering_meta_text"
+            android:padding="4.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-16.0dip"
+            android:text="encoding_type" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

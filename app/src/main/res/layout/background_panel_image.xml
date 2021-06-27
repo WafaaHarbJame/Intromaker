@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/image_picker_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tf_title_set_image_background" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/image_picker_local_storage"
+                android:background="?android:selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4.0dip"
+                android:layout_weight="1.0"
+                android:layout_marginEnd="2.0dip"
+                android:elevation="10.0dip"
+                android:backgroundTint="@color/colorPrimaryLessLight"
+                app:cardCornerRadius="12.0dip">
+
+                <RelativeLayout
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/element_bg2"
+                        android:scaleType="centerCrop"
+                        android:alpha="0.7"
+                        android:rotation="180.0" />
+
+                    <TextView
+                        android:textSize="18.0sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td_btn_from_internal_storage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/image_picker_library"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4.0dip"
+                android:layout_weight="1.0"
+                android:layout_marginStart="2.0dip"
+                android:elevation="10.0dip"
+                android:backgroundTint="@color/colorPrimaryLessLight"
+                app:cardCornerRadius="16.0dip">
+
+                <RelativeLayout
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/element_bg2"
+                        android:scaleType="centerCrop"
+                        android:alpha="0.7"
+                        android:rotationX="180.0" />
+
+                    <TextView
+                        android:textSize="18.0sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tf_btn_download_from_library"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/daren_seekbar_container_image_bg"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="170.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/tf_title_darken"
+                android:layout_weight="2.0" />
+
+            <SeekBar
+                android:id="@+id/transparency_seekbar_image_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

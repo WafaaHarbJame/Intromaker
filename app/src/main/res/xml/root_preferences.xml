@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory app:title="Video processing">
+        <ListPreference
+            android:icon="@drawable/ic_settings_render_type"
+
+            app:defaultValue="Software encoder"
+            app:entries="@array/render_entries"
+            app:entryValues="@array/render_values"
+            app:key="software encoder"
+            app:title="Default rendering type"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

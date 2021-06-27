@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="14.0sp"
+        android:id="@+id/item_video_resolution_text"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Resolution"
+        android:layout_weight="1.0" />
+
+    <ImageView
+        android:id="@+id/pro_res_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ic_diamond"
+        app:tint="@color/colorAccent" />
+
+    <TextView
+        android:textSize="14.0sp"
+        android:id="@+id/item_video_size"
+        android:padding="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="3 MB"
+        android:layout_weight="1.0"
+        android:textAlignment="textEnd" />
+</LinearLayout>

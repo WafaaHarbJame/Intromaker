@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@drawable/rounded_corner_card_primary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_dyn_picker_card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/card_dyn_frame_layout"
+                    android:background="@drawable/rounded_corner_card_primary"
+                    android:layout_width="224.0dip"
+                    android:layout_height="126.0dip"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/card_dyn_picker_animation_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/dyn_image"
+                            android:layout_width="224.0dip"
+                            android:layout_height="126.0dip"
+                            app:layout_constraintDimensionRatio="H,16:9"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/dyn_selected"
+                            android:background="#80000000"
+                            android:layout_width="224.0dip"
+                            android:layout_height="126.0dip"
+                            android:scaleType="centerInside"
+                            app:tint="@color/colorAccent" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
