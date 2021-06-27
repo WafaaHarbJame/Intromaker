@@ -111,7 +111,8 @@ public class PremiumFeatureActivity2 extends AppCompatActivity implements Billin
 
     @Override
     public void onBillingError(int errorCode, Throwable error) {
-
+        Log.e(getClass().getSimpleName(), "errorCode " + errorCode);
+//        error.printStackTrace();
     }
 
     @Override

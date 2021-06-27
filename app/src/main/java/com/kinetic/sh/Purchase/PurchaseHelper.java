@@ -2,6 +2,7 @@ package com.kinetic.sh.Purchase;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,10 +50,10 @@ public class PurchaseHelper implements PurchasesUpdatedListener, ConsumeResponse
                 PurchaseHelper.this.billingClient
                         .consumeAsync(ConsumeParams.newBuilder()
                                 .setPurchaseToken(purchase.getPurchaseToken())
-                                .setDeveloperPayload(purchase.getDeveloperPayload())
+//                                .setDeveloperPayload(purchase.getDeveloperPayload())
                                 .build(), PurchaseHelper.this);
                 ((MainApplication) ((AppCompatActivity) PurchaseHelper.this.mContext).getApplication()).setPremium(false);
-                Log.i(PurchaseHelper.TAG, "consumed :" + purchase.getSku());
+                Log.i(PurchaseHelper.TAG, "consumed :" + purchase.getSkus().get(0));
             }
         });
     }
@@ -80,12 +81,15 @@ public class PurchaseHelper implements PurchasesUpdatedListener, ConsumeResponse
 
                 @Override
                 public void onBillingError(int errorCode, Throwable error) {
-
+                    Log.e(getClass().getSimpleName(), "Log errorCode " + errorCode);
+                    Toast.makeText(mContext, "onBillingError errorCode " + errorCode, Toast.LENGTH_SHORT).show();
+//                    error.printStackTrace();
                 }
 
                 @Override
                 public void onBillingInitialized() {
-
+                    Toast.makeText(mContext, "onBillingInitialized", Toast.LENGTH_SHORT).show();
+                    System.out.println("Log onBillingInitialized");
                 }
             });
             billingProcessor.initialize();

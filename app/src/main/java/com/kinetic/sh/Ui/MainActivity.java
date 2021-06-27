@@ -332,8 +332,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     Purchase purchase = MainActivity.this.global.getPurchase();
                                     if (purchase != null) {
                                         Log.i(TAG, "end render: purchase is not null");
-                                        if (purchase.getSku().equals(MainActivity.this.context.getString(R.string.subscription_sku_single_item))) {
-                                            Log.i(TAG, "consumed: " + purchase.getSku());
+                                        if (purchase.getSkus().get(0).equals(MainActivity.this.context.getString(R.string.subscription_sku_single_item))) {
+                                            Log.i(TAG, "consumed: " + purchase.getSkus().get(0));
                                             new PurchaseHelper(MainActivity.this.context).consumePurchase(purchase);
                                             Toast.makeText(MainActivity.this.context, MainActivity.this.context.getString(R.string.tf_msg_single_template_used), Toast.LENGTH_LONG).show();
                                         }
@@ -412,8 +412,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     Purchase purchase = MainActivity.this.global.getPurchase();
                                     if (purchase != null) {
                                         Log.i(TAG, "end render: purchase is not null");
-                                        if (purchase.getSku().equals(MainActivity.this.context.getString(R.string.tf_msg_single_template_used))) {
-                                            Log.i(TAG, "consumed: " + purchase.getSku());
+                                        if (purchase.getSkus().get(0).equals(MainActivity.this.context.getString(R.string.tf_msg_single_template_used))) {
+                                            Log.i(TAG, "consumed: " + purchase.getSkus().get(0));
                                             new PurchaseHelper(MainActivity.this.context).consumePurchase(purchase);
                                         }
                                     }
@@ -468,6 +468,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 1) {
             if (grantResults.length <= 0 || grantResults[0] != 0) {
                 onPermissionDenyDialog().show();
